@@ -87,6 +87,8 @@ public class Address {
         return (compAddress.addressLine1 == this.addressLine1 && this.addressLine2 == compAddress.addressLine2 && compAddress.city == this.city && this.zipcode == compAddress.zipcode);
     }
 
-//    @Override
-//    public String toString(){}
+    @Override
+    public String toString(){
+        return "Address{addressLine1='" + this.addressLine1 + "', addressLine2='" + this.addressLine2+ "', city='" + this.city + "', state='" + this.state + "', zipcode='" + this.zipcode + "'}";
+    }
 }
