@@ -60,4 +60,9 @@ public class Person {
         Person person = (Person) o;
         return (person.id == this.id && this.name == person.name &&this.address == person.address);
     }
+
+    @Override
+    public String toString(){
+        return "Person{id=" + this.id + ", name='" + this.name + "', address=" + this.address.toString() + "}";
+    }
 }
