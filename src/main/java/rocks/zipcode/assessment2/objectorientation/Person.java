@@ -5,7 +5,7 @@ package rocks.zipcode.assessment2.objectorientation;
  * @ATTENTION_TO_STUDENTS - Ensure that you have completed the `Address` class before attempting this class
  */
 public class Person {
-    Long id;
+    Long id= null;
     String name;
     Address address;
     /**
@@ -58,7 +58,7 @@ public class Person {
             return false;
         }
         Person person = (Person) o;
-        return (person.id == this.id && this.name == person.name &&this.address == person.address);
+        return (person.id == this.id && this.name == person.name && this.address == person.address);
     }
 
     @Override
